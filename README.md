@@ -20,4 +20,4 @@
 
 ![img](https://github.com/shandongfeng/StudentManagement/blob/master/showImages/6.jpg)
 
-![img](https://github.com/shandongfeng/StudentManagement/blob/master/showImages/9d29621a2b5e4eb0ab3f4e8bef214aca.gif)
+![gif](https://github.com/shandongfeng/StudentManagement/blob/master/showImages/9d29621a2b5e4eb0ab3f4e8bef214aca.gif)
