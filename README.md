@@ -20,4 +20,4 @@
 
 ![img](https://img-blog.csdnimg.cn/a4ecfbb96ebc4f55981b415ddabb8096.png)
 
-![img](https://github.com/shandongfeng/StudentManagement/blob/newBranch/.qtc_clangd/9d29621a2b5e4eb0ab3f4e8bef214aca.gif)
+![img]([https://github.com/shandongfeng/StudentManagement/blob/newBranch/.qtc_clangd/9d29621a2b5e4eb0ab3f4e8bef214aca.gif](https://img-blog.csdnimg.cn/9d29621a2b5e4eb0ab3f4e8bef214aca.gif)https://img-blog.csdnimg.cn/9d29621a2b5e4eb0ab3f4e8bef214aca.gif)
