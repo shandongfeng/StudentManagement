@@ -1,0 +1,26 @@
+//数据库
+1.首先配置Qt qmake  pro文件 QT       += core gui sql
+2.数据库无法打开
+    2.1.可能是默认连接出错，注意QSQLITE拼写
+	if(QSqlDatabase::contains("qt_sql_default_connection")){
+        		db = QSqlDatabase::addDatabase("qt_sql_default_connection");
+    	}else{
+        		db = QSqlDatabase::addDatabase("QSQLITE");
+    	}
+    2.2.QSqlDatabase::addDatabase( ) 第二个参数是数据库默认连接名,只连接一个数据库时不能设置，不然后面的query语句查询不到db（原因不详）
+3.db.setDatabaseName("  .db");	设置数据名，保证后续操作都对该db文件进行操作
+4.同时连接多个数据库时，一定要指定数据库的连接名，并且不能相同，之后所有的query初始化时都要指定数据库
+5.每次增删改数据时，都要先调用 查询语句找到指定数据表，然后query.next() ，这样才指向了真正的数据首行
+
+//query语句
+1.最后要调用query.finish();
+2.query.prepare(),用完好像要清空（有待考证）
+3.query查询语句不区分大小写
+
+//删除
+1.删除表并不会删除表头字段
+
+//自增表
+1.自增 id integer primary key设置后，无需插入id字段的数据，系统默认自增（只能是integer数据类型，必须是首要键）
+2.就算delete数据库后，自增表的索引起始仍是上一次数据库最后索引+1
+3.表清空后 ，才能用"UPDATE sqlite_sequence SET seq = 0 WHERE name = '数据表名'";这样自增表就会清0，不加表名就清空所有的数据表自增表

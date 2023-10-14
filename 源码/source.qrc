@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/close.jpg</file>
+        <file>image/combobox1.jpg</file>
+        <file>image/lock.jpg</file>
+        <file>image/logo.jpg</file>
+        <file>image/small.jpg</file>
+        <file>image/tray.jpg</file>
+        <file>image/user.jpg</file>
+        <file>image/white.jpg</file>
+        <file>image/total.jpg</file>
+        <file>image/2.gif</file>
+        <file>image/jump.gif</file>
+        <file>image/find.gif</file>
+        <file>image/signup.gif</file>
+    </qresource>
+</RCC>
